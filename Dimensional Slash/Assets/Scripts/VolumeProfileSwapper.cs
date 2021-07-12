@@ -1,21 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
-public class Pillar : MonoBehaviour
+public class VolumeProfileSwapper : MonoBehaviour
 {
-    public Sprite DaySprite;
-    public Sprite NightSprite;
+    public VolumeProfile DayProfile;
+    public VolumeProfile NightProfile;
+
+    Volume globalVolume;
 
     private void OnEnable()
     {
-        GameManager.OnDimensionChange += OnPillarChange;
+        GameManager.OnDimensionChange += SwapProfile;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        globalVolume = GetComponent<Volume>();
     }
 
     // Update is called once per frame
@@ -24,25 +27,25 @@ public class Pillar : MonoBehaviour
         
     }
 
-    void OnPillarChange(GameManager._Dimensions dimension)
+    void SwapProfile(GameManager._Dimensions dimension)
     {
         switch (dimension)
         {
             case GameManager._Dimensions.Day:
+                globalVolume.profile = DayProfile;
                 break;
 
             case GameManager._Dimensions.Night:
+                globalVolume.profile = NightProfile;
                 break;
 
             default:
                 break;
         }
-        print("boiiii");
-        print(dimension.ToString());
     }
 
     private void OnDisable()
     {
-        GameManager.OnDimensionChange -= OnPillarChange;
+        GameManager.OnDimensionChange -= SwapProfile;
     }
 }

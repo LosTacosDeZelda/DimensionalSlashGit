@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public _Dimensions _currentDimension;
+ 
     public enum _Dimensions
     {
         Day,
