@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be48ae45d08c9cf43bc2ef15bde7fc6c, type: 3}
   m_Name: RippleEffect
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   settings:
     Event: 500
     blitMaterial: {fileID: 2100000, guid: 5af871b130b42c64fbb90cf324682bf9, type: 2}

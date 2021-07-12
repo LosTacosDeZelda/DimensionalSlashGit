@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
         Night
     }
 
-    public delegate void DimensionChangeHandler();
+    public delegate void DimensionChangeHandler(_Dimensions nextDimension);
     public static DimensionChangeHandler OnDimensionChange;
     
     // Start is called before the first frame update
@@ -26,9 +26,9 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void ChangeDimension(_Dimensions newDimension)
+    public void ChangeDimension(_Dimensions nextDimension)
     {
         //Invoke OnDimensionChange when the player changes dimensions, it will trigger calls on scripts who subscribed to it !
-        OnDimensionChange.Invoke();
+        OnDimensionChange.Invoke(nextDimension);
     }
 }

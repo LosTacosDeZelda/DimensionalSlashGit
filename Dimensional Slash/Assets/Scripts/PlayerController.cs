@@ -11,12 +11,8 @@ public class PlayerController : EntityController
     Vector2 inputAxises;
     float dashDistance;
     float dashSpeed;
-    PossibleDimensions currentDimension;
-    enum PossibleDimensions
-    {
-        Day,
-        Night
-    }
+    public int dimensionIndex = 0;
+    GameManager._Dimensions currentDimension;
 
     Rigidbody2D playerBody;
     
@@ -31,6 +27,11 @@ public class PlayerController : EntityController
     void Update()
     {
         TopdownMovement();
+
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            SwitchDimension();
+        }
     }
 
     void TopdownMovement()
@@ -44,9 +45,21 @@ public class PlayerController : EntityController
     //Called when the player slashes the screen with the special katana and changes dimensions
     void SwitchDimension()
     {
-        gameManager.ChangeDimension(GameManager._Dimensions.Day);
+        //Incrémente l'index de dimension
+        dimensionIndex++;
+        
+        if (dimensionIndex > 1)
+        {
+            dimensionIndex = 0;
+        }
+
+        currentDimension = (GameManager._Dimensions)dimensionIndex;
+
+        gameManager.ChangeDimension(currentDimension);
+
     }
 
+    
     public override void Attack(int chosenAttack)
     {
 
