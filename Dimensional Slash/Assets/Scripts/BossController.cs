@@ -1,11 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Les boss seront essentiellement des state machines : ils auront tous plusieurs actions et attaques
 public class BossController : EntityController
 {
-    int numberOfPhases;
-    Transform[] weakSpots;
+    public class Attacks
+    {
+
+    }
+
+    
 
     public override void Attack(int chosenAttack)
     {

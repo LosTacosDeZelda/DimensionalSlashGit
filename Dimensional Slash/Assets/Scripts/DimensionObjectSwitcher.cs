@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pillar : MonoBehaviour
+public class DimensionObjectSwitcher : MonoBehaviour
 {
     public enum ColliderType
     {
