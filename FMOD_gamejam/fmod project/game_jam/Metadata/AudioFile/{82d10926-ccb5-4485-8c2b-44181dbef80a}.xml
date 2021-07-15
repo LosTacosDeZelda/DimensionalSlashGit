@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{82d10926-ccb5-4485-8c2b-44181dbef80a}">
+		<property name="assetPath">
+			<value>Boss_sfx/footstep_boss_01.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>11.73140589569161</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{16813aac-b017-4856-b492-4b121ea745ac}</destination>
+		</relationship>
+	</object>
+</objects>

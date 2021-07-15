@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{41cbf3ca-11b1-44b8-97c8-5ed7ff1fbee2}">
+		<property name="assetPath">
+			<value>melee_weapon_hit/melee_weapon_hit_02.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.1427708333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{16813aac-b017-4856-b492-4b121ea745ac}</destination>
+		</relationship>
+	</object>
+</objects>

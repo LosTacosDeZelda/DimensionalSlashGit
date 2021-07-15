@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{154b33af-272b-44c9-8845-d44dbdccd6e8}">
+		<property name="assetPath">
+			<value>fire_ambiance/fire_ambiance_01.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>13.06</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{16813aac-b017-4856-b492-4b121ea745ac}</destination>
+		</relationship>
+	</object>
+</objects>

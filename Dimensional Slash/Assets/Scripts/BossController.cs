@@ -8,7 +8,7 @@ public class BossController : EntityController
 {
     public class Attacks
     {
-
+        public int DamageDealt;
     }
 
     

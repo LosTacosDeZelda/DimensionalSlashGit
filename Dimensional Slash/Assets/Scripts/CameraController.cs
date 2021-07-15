@@ -10,7 +10,8 @@ public class CameraController : MonoBehaviour
     public bool playerIsInDeadZone = true;
     public float CamSpeed;
 
-    public float movementThreshold = 3;
+    public Vector2 followOffset;
+    public Vector2 threshold;
 
     Vector3 moveTemp;
     // Start is called before the first frame update

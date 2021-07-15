@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EncodableAsset" id="{10a178bf-09a1-45a1-b89c-4f675681188b}">
+		<property name="assetPath">
+			<value>melee_weapon_hit/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{16813aac-b017-4856-b492-4b121ea745ac}</destination>
+		</relationship>
+	</object>
+</objects>
