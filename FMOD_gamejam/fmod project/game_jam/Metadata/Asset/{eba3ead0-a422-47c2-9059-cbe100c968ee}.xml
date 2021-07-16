@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.01.00">
 	<object class="EncodableAsset" id="{eba3ead0-a422-47c2-9059-cbe100c968ee}">
 		<property name="assetPath">
-			<value>Bow_n_arrow_shoot/</value>
+			<value>Bow_n_arrow/</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{16813aac-b017-4856-b492-4b121ea745ac}</destination>

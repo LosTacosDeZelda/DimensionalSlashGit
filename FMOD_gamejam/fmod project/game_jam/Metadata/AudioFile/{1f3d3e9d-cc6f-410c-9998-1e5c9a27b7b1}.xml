@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{1f3d3e9d-cc6f-410c-9998-1e5c9a27b7b1}">
 		<property name="assetPath">
-			<value>Boss_sfx/boss_attack_explosion.wav</value>
+			<value>Boss_sfx/boss_attack_01.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

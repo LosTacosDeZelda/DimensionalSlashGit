@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.01.00">
 	<object class="ParameterPreset" id="{cd0b18f4-1185-4af1-bc0c-58ee37b19824}">
 		<property name="name">
-			<value>Volume_parameter</value>
+			<value>fade_in</value>
 		</property>
 		<relationship name="folder">
 			<destination>{a68c0a9c-bed0-4a4b-a566-5904afac4a6d}</destination>

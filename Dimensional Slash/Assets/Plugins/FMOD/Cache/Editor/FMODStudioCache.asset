@@ -1,5 +1,85 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6764870801518199404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/death/player_game_over
+  m_EditorClassIdentifier: 
+  Path: event:/Player/death/player_game_over
+  guid: ae77d7c600ae6844a609b3824014ef5f
+  Banks:
+  - {fileID: -1497383116786898032}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &-4755631410970208334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Menu.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Menu.bank
+  Name: Menu
+  StudioPath: bank:/Menu
+  lastModified: 637619028656213252
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-1497383116786898032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Player.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Player.bank
+  Name: Player
+  StudioPath: bank:/Player
+  lastModified: 637619028667892725
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-1318854611517927576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637619028654003506
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,10 +92,191 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
+  EditorBanks:
+  - {fileID: 7576477237846790460}
+  - {fileID: 3812352608022972897}
+  - {fileID: 3822260926916722281}
+  - {fileID: 6237671882342507732}
+  - {fileID: -1318854611517927576}
+  - {fileID: -4755631410970208334}
+  - {fileID: -1497383116786898032}
+  EditorEvents:
+  - {fileID: 2832685537942413482}
+  - {fileID: -6764870801518199404}
+  - {fileID: 5059018965783859680}
+  - {fileID: 2992113978648423283}
   EditorParameters: []
-  MasterBanks: []
-  StringsBanks: []
-  stringsBankWriteTime: 0
+  MasterBanks:
+  - {fileID: -1318854611517927576}
+  StringsBanks:
+  - {fileID: 7576477237846790460}
+  stringsBankWriteTime: 637619028656162826
   cacheVersion: 6
+--- !u!114 &384590085559809724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/player_footstep_nm/Volume_parameter
+  m_EditorClassIdentifier: 
+  Name: Volume_parameter
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2406229294
+    data2: 116947650
+  Exists: 1
+--- !u!114 &2832685537942413482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/attack/spear_swing
+  m_EditorClassIdentifier: 
+  Path: event:/Player/attack/spear_swing
+  guid: 1d61f6c94efaf64ebde4f16dd4951bc1
+  Banks:
+  - {fileID: -1497383116786898032}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2340
+--- !u!114 &2992113978648423283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/attack/spear_hit
+  m_EditorClassIdentifier: 
+  Path: event:/Player/attack/spear_hit
+  guid: d8bf5391a2c9d943bc4770937ad65ebc
+  Banks:
+  - {fileID: -1497383116786898032}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1050
+--- !u!114 &3812352608022972897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/ambiance.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/ambiance.bank
+  Name: ambiance
+  StudioPath: bank:/ambiance
+  lastModified: 637619028653063118
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &3822260926916722281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bosses.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Bosses.bank
+  Name: Bosses
+  StudioPath: bank:/Bosses
+  lastModified: 637619028653204071
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &5059018965783859680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/footstep/player_footstep_nm
+  m_EditorClassIdentifier: 
+  Path: event:/Player/footstep/player_footstep_nm
+  guid: d0d47af3cd50f1429199bd42dc22b341
+  Banks:
+  - {fileID: -1497383116786898032}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 384590085559809724}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &6237671882342507732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/footsteps.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/footsteps.bank
+  Name: footsteps
+  StudioPath: bank:/footsteps
+  lastModified: 637619028653684339
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &7576477237846790460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637619028656162826
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1200
+  Exists: 1
