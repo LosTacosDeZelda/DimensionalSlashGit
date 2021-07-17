@@ -67,9 +67,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -799949625
+  m_SortingLayer: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 5cd7ab65948128a40bf1737029f50da9, type: 3}
   m_Color: {r: 0.8867924, g: 0.2300641, b: 0.2300641, a: 1}
   m_FlipX: 0
@@ -94,6 +94,8 @@ GameObject:
   - component: {fileID: 7023590122759967019}
   - component: {fileID: 7023590122759967016}
   - component: {fileID: 7023590122759967020}
+  - component: {fileID: 558451021767617668}
+  - component: {fileID: 5159981558309127306}
   m_Layer: 0
   m_Name: PlayerSamurai
   m_TagString: Player
@@ -131,6 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: {x: 5, y: 5}
   gameManager: {fileID: 0}
+  dimensionIndex: 0
 --- !u!212 &7023590122759967019
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -149,7 +152,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d857985e6b8e3ed4c87f465cbec80e95, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -167,11 +170,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -799949625
+  m_SortingLayer: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 5cd7ab65948128a40bf1737029f50da9, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.36320752, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -215,7 +218,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.37450123}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -226,8 +229,36 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.25099754}
   m_EdgeRadius: 0
+--- !u!114 &558451021767617668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7023590122759967017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fa9302ec255b0640b429fb5da04231a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!58 &5159981558309127306
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7023590122759967017}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.129877
 --- !u!1 &7023590122773161619
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,9 +358,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingLayerID: -799949625
+  m_SortingLayer: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 5cd7ab65948128a40bf1737029f50da9, type: 3}
   m_Color: {r: 0.6654958, g: 0.29503384, b: 0.9622642, a: 1}
   m_FlipX: 0
