@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{36ed766d-5979-4caa-83ef-8ca4274816e0}">
 		<property name="assetPath">
 			<value>Boss_sfx/Boss_02_Scream.wav</value>

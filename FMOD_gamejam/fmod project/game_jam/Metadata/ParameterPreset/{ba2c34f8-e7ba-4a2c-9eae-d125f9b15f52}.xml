@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{ba2c34f8-e7ba-4a2c-9eae-d125f9b15f52}">
+		<property name="name">
+			<value>Stop_ambiance</value>
+		</property>
+		<relationship name="folder">
+			<destination>{a68c0a9c-bed0-4a4b-a566-5904afac4a6d}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{ef83ff97-a0d8-46f7-aa25-c4bb8e1bc103}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{ef83ff97-a0d8-46f7-aa25-c4bb8e1bc103}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

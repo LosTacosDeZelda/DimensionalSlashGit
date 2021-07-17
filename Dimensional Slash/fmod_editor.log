@@ -8,7 +8,7 @@
 [LOG] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001A28F306AC8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001F89D5726D8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -17,18 +17,1056 @@
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SoundI::release                          :  (000001A28D29FD58)
-[LOG] SoundI::release                          :     footstep_normal_01 (000001A228F902A8)
-[LOG] SoundI::release                          :  (000001A28D29F798)
-[LOG] SoundI::release                          :     footstep_normal_02 (000001A228F905E8)
-[LOG] SoundI::release                          :  (000001A28D29D0C8)
-[LOG] SoundI::release                          :     footstep_normal_03 (000001A229992978)
-[LOG] SoundI::release                          :  (000001A28D29F4B8)
-[LOG] SoundI::release                          :     footstep_normal_04 (000001A28D2AC688)
-[LOG] SoundI::release                          :  (000001A28D2A0038)
-[LOG] SoundI::release                          :     footstep_normal_05 (000001A20F99B858)
-[LOG] SoundI::release                          :  (000001A28D29D518)
-[LOG] SoundI::release                          :     footstep_normal_06 (000001A28D2A9288)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F89848DD48 : node = 000001F7D3E98850
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F89848DD48
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F7D3E98960
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_03', format=5, channels=2, frequency=48000, lengthbytes=517600, lengthpcm=672960, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.080688.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F89848DD48
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F89848CE18 : node = 000001F7D3E97590
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F89848CE18
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F7D3E976A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_01', format=5, channels=2, frequency=48000, lengthbytes=520928, lengthpcm=670080, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.090149.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F89848CE18
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F89848CFC8 : node = 000001F7D3E98D50
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F89848CFC8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F7D3E98E60
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_02', format=5, channels=2, frequency=48000, lengthbytes=518208, lengthpcm=683520, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.113556.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F89848CFC8
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F89848AAA8 : node = 000001F7D3E98490
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F89848AAA8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F7D3E985A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_03', format=5, channels=2, frequency=48000, lengthbytes=517600, lengthpcm=672960, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.080688.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F89848AAA8
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F89848B9D8 : node = 000001F898E8A370
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F89848B9D8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F898E8A480
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_01', format=5, channels=2, frequency=48000, lengthbytes=520928, lengthpcm=670080, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.090149.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F89848B9D8
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F81B2F2E28 : node = 000001F898E89AB0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F81B2F2E28
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F898E89BC0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_02', format=5, channels=2, frequency=48000, lengthbytes=518208, lengthpcm=683520, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.113556.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F81B2F2E28
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F8980AB4A8 : node = 000001F898E89BF0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F8980AB4A8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F898E89D00
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_01', format=5, channels=2, frequency=48000, lengthbytes=520928, lengthpcm=670080, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.090149.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F8980AB4A8
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F8980ABD18 : node = 000001F898E8AD70
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F8980ABD18
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F898E8AE80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_03', format=5, channels=2, frequency=48000, lengthbytes=517600, lengthpcm=672960, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.080688.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F8980ABD18
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F8355FD418 : node = 000001F898E8B4F0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F8355FD418
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F898E8B600
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_01', format=5, channels=2, frequency=48000, lengthbytes=520928, lengthpcm=670080, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.090149.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F8355FD418
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F835A35B78 : node = 000001F8A4887210
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F835A35B78
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F8A4887320
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_02', format=5, channels=2, frequency=48000, lengthbytes=518208, lengthpcm=683520, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.113556.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F835A35B78
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF1328 : node = 000001F8A4887490
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF1328
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F8A48875A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_01', format=5, channels=2, frequency=48000, lengthbytes=520928, lengthpcm=670080, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.090149.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF1328
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF0FC8 : node = 000001F8A4887C10
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF0FC8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F8A4887D20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_03', format=5, channels=2, frequency=48000, lengthbytes=517600, lengthpcm=672960, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.080688.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF0FC8
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF3698 : node = 000001F8A4887E90
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF3698
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F8A4887FA0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_01', format=5, channels=2, frequency=48000, lengthbytes=520928, lengthpcm=670080, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.090149.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF3698
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF0758 : node = 000001F8A4886090
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF0758
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F8A48861A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_02', format=5, channels=2, frequency=48000, lengthbytes=518208, lengthpcm=683520, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.113556.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF0758
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF0908 : node = 000001F7D3E971D0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF0908
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F7D3E972E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_01', format=5, channels=2, frequency=48000, lengthbytes=520928, lengthpcm=670080, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.090149.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF0908
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF34E8 : node = 000001F7D3E976D0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF34E8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F7D3E977E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_03', format=5, channels=2, frequency=48000, lengthbytes=517600, lengthpcm=672960, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.080688.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF34E8
+[LOG] SoundI::release                          : wind_ambiance_02 (000001F89CF37128)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F89D707598)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F89CF30A38)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF03F8 : node = 000001F7D3E97810
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF03F8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F7D3E97920
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_02', format=5, channels=2, frequency=48000, lengthbytes=518208, lengthpcm=683520, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.113556.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF03F8
+[LOG] SoundI::release                          : wind_ambiance_03 (000001F89848DD48)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F89D70B698)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F89848E918)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF0E18 : node = 000001F7D3E98850
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF0E18
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F7D3E98960
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_01', format=5, channels=2, frequency=48000, lengthbytes=520928, lengthpcm=670080, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.090149.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF0E18
+[LOG] SoundI::release                          : wind_ambiance_01 (000001F89848CE18)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F89D707738)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F89848C248)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF6278 : node = 000001F7D3E97950
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF6278
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F7D3E97A60
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_03', format=5, channels=2, frequency=48000, lengthbytes=517600, lengthpcm=672960, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.080688.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF6278
+[LOG] SoundI::release                          : wind_ambiance_02 (000001F89848CFC8)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F89D70B838)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F89848A8F8)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF4418 : node = 000001F898E8A730
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF4418
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F898E8A840
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_02', format=5, channels=2, frequency=48000, lengthbytes=518208, lengthpcm=683520, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.113556.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF4418
+[LOG] SoundI::release                          : wind_ambiance_03 (000001F89848AAA8)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F89D709478)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F89848AC58)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF0C68 : node = 000001F835AE1980
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF0C68
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F835AE1A90
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_03', format=5, channels=2, frequency=48000, lengthbytes=517600, lengthpcm=672960, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.080688.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF0C68
+[LOG] SoundI::release                          : wind_ambiance_01 (000001F89848B9D8)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F89D709FD8)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F81B2F3698)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF45C8 : node = 000001F835AE0440
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF45C8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F835AE0550
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_01', format=5, channels=2, frequency=48000, lengthbytes=520928, lengthpcm=670080, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.090149.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF45C8
+[LOG] SoundI::release                          : wind_ambiance_02 (000001F81B2F2E28)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F89D7066F8)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F81B2F2768)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF1688 : node = 000001F835AE06C0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF1688
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F835AE07D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_03', format=5, channels=2, frequency=48000, lengthbytes=517600, lengthpcm=672960, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.080688.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF1688
+[LOG] SoundI::release                          : wind_ambiance_01 (000001F8980AB4A8)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F89D706898)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F8980AA728)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF65D8 : node = 000001F835AE0940
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF65D8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F835AE0A50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_02', format=5, channels=2, frequency=48000, lengthbytes=518208, lengthpcm=683520, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.113556.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF65D8
+[LOG] SoundI::release                          : wind_ambiance_03 (000001F8980ABD18)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F89D707C18)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F8356C9578)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF4FE8 : node = 000001F898E89BF0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF4FE8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F898E89D00
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_01', format=5, channels=2, frequency=48000, lengthbytes=520928, lengthpcm=670080, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.090149.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF4FE8
+[LOG] SoundI::release                          : wind_ambiance_01 (000001F8355FD418)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F89D707DB8)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F8355FD268)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF2C78 : node = 000001F898E8AD70
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF2C78
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F898E8AE80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_03', format=5, channels=2, frequency=48000, lengthbytes=517600, lengthpcm=672960, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.080688.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF2C78
+[LOG] SoundI::release                          : wind_ambiance_02 (000001F835A35B78)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F89D706BD8)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F89CF3BEC8)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF2768 : node = 000001F898E8B4F0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF2768
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F898E8B600
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_01', format=5, channels=2, frequency=48000, lengthbytes=520928, lengthpcm=670080, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.090149.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF2768
+[LOG] SoundI::release                          : wind_ambiance_01 (000001F833CF1328)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F89D707258)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F833CF40B8)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF4C88 : node = 000001F898E8A370
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF4C88
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F898E8A480
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_02', format=5, channels=2, frequency=48000, lengthbytes=518208, lengthpcm=683520, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.113556.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF4C88
+[LOG] SoundI::release                          : wind_ambiance_03 (000001F833CF0FC8)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F89D706F18)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F833CF5348)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF2AC8 : node = 000001F898E89AB0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF2AC8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F898E89BC0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_01', format=5, channels=2, frequency=48000, lengthbytes=520928, lengthpcm=670080, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.090149.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF2AC8
+[LOG] SoundI::release                          : wind_ambiance_01 (000001F833CF3698)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F89D707F58)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F833CF4928)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF3188 : node = 000001F8A4887C10
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF3188
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F8A4887D20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_03', format=5, channels=2, frequency=48000, lengthbytes=517600, lengthpcm=672960, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.080688.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF3188
+[LOG] SoundI::release                          : wind_ambiance_02 (000001F833CF0758)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F89D7070B8)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F833CF4E38)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF4778 : node = 000001F8A4887E90
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF4778
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F8A4887FA0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_01', format=5, channels=2, frequency=48000, lengthbytes=520928, lengthpcm=670080, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.090149.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF4778
+[LOG] SoundI::release                          : wind_ambiance_01 (000001F833CF0908)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F89D70CD58)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F833CF3338)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF2FD8 : node = 000001F8A4887210
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF2FD8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F8A4887320
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_02', format=5, channels=2, frequency=48000, lengthbytes=518208, lengthpcm=683520, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.113556.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF2FD8
+[LOG] SoundI::release                          : wind_ambiance_03 (000001F833CF34E8)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F89D70D238)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F833CF5D68)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF5D68 : node = 000001F8A4886090
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF5D68
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F8A48861A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_03', format=5, channels=2, frequency=48000, lengthbytes=517600, lengthpcm=672960, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.080688.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF5D68
+[LOG] SoundI::release                          : wind_ambiance_02 (000001F833CF03F8)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F89D707598)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F833CF1B98)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF4E38 : node = 000001F8A4887490
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF4E38
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F8A48875A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_01', format=5, channels=2, frequency=48000, lengthbytes=520928, lengthpcm=670080, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.090149.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF4E38
+[LOG] SoundI::release                          : wind_ambiance_01 (000001F833CF0E18)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F89D70B698)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F833CF5A08)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF40B8 : node = 000001F7D3E98D50
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF40B8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F7D3E98E60
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_03', format=5, channels=2, frequency=48000, lengthbytes=517600, lengthpcm=672960, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.080688.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF40B8
+[LOG] SoundI::release                          : wind_ambiance_03 (000001F833CF6278)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F89D707738)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F833CF6938)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF05A8 : node = 000001F7D3E98850
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF05A8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F7D3E98960
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_02', format=5, channels=2, frequency=48000, lengthbytes=518208, lengthpcm=683520, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.113556.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF05A8
+[LOG] SoundI::release                          : wind_ambiance_02 (000001F833CF4418)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F89D70B838)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F833CF60C8)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF3698 : node = 000001F7D3E971D0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF3698
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F7D3E972E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_03', format=5, channels=2, frequency=48000, lengthbytes=517600, lengthpcm=672960, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.080688.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF3698
+[LOG] SoundI::release                          : wind_ambiance_03 (000001F833CF0C68)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F89D709478)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F833CF0248)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF5348 : node = 000001F7D3E97590
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF5348
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F7D3E976A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_01', format=5, channels=2, frequency=48000, lengthbytes=520928, lengthpcm=670080, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.090149.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF5348
+[LOG] SoundI::release                          : wind_ambiance_01 (000001F833CF45C8)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F89D709FD8)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F833CF6AE8)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF0758 : node = 000001F835AE1980
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF0758
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F835AE1A90
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_02', format=5, channels=2, frequency=48000, lengthbytes=518208, lengthpcm=683520, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.113556.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF0758
+[LOG] SoundI::release                          : wind_ambiance_03 (000001F833CF1688)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F89D7066F8)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F833CF3BA8)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF3BA8 : node = 000001F835AE06C0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF3BA8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F835AE07D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_03', format=5, channels=2, frequency=48000, lengthbytes=517600, lengthpcm=672960, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.080688.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF3BA8
+[LOG] SoundI::release                          : wind_ambiance_02 (000001F833CF65D8)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F89D706898)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F833CF54F8)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF14D8 : node = 000001F898E8A730
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF14D8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F898E8A840
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_01', format=5, channels=2, frequency=48000, lengthbytes=520928, lengthpcm=670080, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.090149.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF14D8
+[LOG] SoundI::release                          : wind_ambiance_01 (000001F833CF4FE8)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F89D707C18)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F833CF1838)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF54F8 : node = 000001F898E89BF0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF54F8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F898E89D00
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_02', format=5, channels=2, frequency=48000, lengthbytes=518208, lengthpcm=683520, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.113556.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF54F8
+[LOG] SoundI::release                          : wind_ambiance_03 (000001F833CF2C78)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F89D707DB8)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F833CF19E8)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF2408 : node = 000001F898E8AD70
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF2408
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F898E8AE80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_01', format=5, channels=2, frequency=48000, lengthbytes=520928, lengthpcm=670080, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.090149.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF2408
+[LOG] SoundI::release                          : wind_ambiance_01 (000001F833CF2768)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F89D706BD8)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F833CF1EF8)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF3848 : node = 000001F898E8B4F0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF3848
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F898E8B600
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_03', format=5, channels=2, frequency=48000, lengthbytes=517600, lengthpcm=672960, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.080688.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF3848
+[LOG] SoundI::release                          : wind_ambiance_02 (000001F833CF4C88)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F89D707258)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F833CF3D58)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF1D48 : node = 000001F7D3E97950
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF1D48
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F7D3E97A60
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_02', format=5, channels=2, frequency=48000, lengthbytes=518208, lengthpcm=683520, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.113556.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF1D48
+[LOG] SoundI::release                          : wind_ambiance_01 (000001F833CF2AC8)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F89D706F18)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F833CF0098)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CFBD98 : node = 000001F898E89AB0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CFBD98
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F898E89BC0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_01', format=5, channels=2, frequency=48000, lengthbytes=520928, lengthpcm=670080, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.090149.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CFBD98
+[LOG] SoundI::release                          : wind_ambiance_03 (000001F833CF3188)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F89D707F58)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F833CF0FC8)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF3F08 : node = 000001F898E8A370
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF3F08
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F898E8A480
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_03', format=5, channels=2, frequency=48000, lengthbytes=517600, lengthpcm=672960, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.080688.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF3F08
+[LOG] SoundI::release                          : wind_ambiance_01 (000001F833CF4778)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F89D7070B8)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F833CF56A8)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF56A8 : node = 000001F8A4887C10
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF56A8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F8A4887D20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_02', format=5, channels=2, frequency=48000, lengthbytes=518208, lengthpcm=683520, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.113556.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF56A8
+[LOG] SoundI::release                          : wind_ambiance_02 (000001F833CF2FD8)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F89D70D3D8)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F833CF5BB8)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF91B8 : node = 000001F8A4887E90
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF91B8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F8A4887FA0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_01', format=5, channels=2, frequency=48000, lengthbytes=520928, lengthpcm=670080, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.090149.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF91B8
+[LOG] SoundI::release                          : wind_ambiance_03 (000001F833CF5D68)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F89D70D238)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F833CF2258)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CFA5F8 : node = 000001F8A4886090
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CFA5F8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F8A48861A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_03', format=5, channels=2, frequency=48000, lengthbytes=517600, lengthpcm=672960, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.080688.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CFA5F8
+[LOG] SoundI::release                          : wind_ambiance_01 (000001F833CF4E38)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F89D707598)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F833CF2918)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF4E38 : node = 000001F8A4887210
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF4E38
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F8A4887320
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_02', format=5, channels=2, frequency=48000, lengthbytes=518208, lengthpcm=683520, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.113556.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF4E38
+[LOG] SoundI::release                          : wind_ambiance_03 (000001F833CF40B8)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F89D70B698)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F833CF03F8)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF40B8 : node = 000001F8A4887490
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF40B8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F8A48875A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_01', format=5, channels=2, frequency=48000, lengthbytes=520928, lengthpcm=670080, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.090149.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF40B8
+[LOG] SoundI::release                          : wind_ambiance_02 (000001F833CF05A8)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F89D707738)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F833CF3338)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF3338 : node = 000001F7D3E98850
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF3338
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F7D3E98960
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_03', format=5, channels=2, frequency=48000, lengthbytes=517600, lengthpcm=672960, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.080688.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF3338
+[LOG] SoundI::release                          : wind_ambiance_03 (000001F833CF3698)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F89D70B838)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F833CF39F8)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF03F8 : node = 000001F7D3E98D50
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF03F8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F7D3E98E60
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_02', format=5, channels=2, frequency=48000, lengthbytes=518208, lengthpcm=683520, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.113556.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF03F8
+[LOG] SoundI::release                          : wind_ambiance_01 (000001F833CF5348)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F89D709478)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F833CF5198)
+[LOG] SystemI::createSound                     : filename = ../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F833CF05A8 : node = 000001F7D3E971D0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F8314DF158.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F833CF05A8
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD_gamejam/fmod project/game_jam/Build\Desktop/ambiance.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3368352
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6272
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F7D3E972E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_ambiance_03', format=5, channels=2, frequency=48000, lengthbytes=517600, lengthpcm=672960, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.080688.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F833CF05A8
+[LOG] SoundI::release                          : wind_ambiance_02 (000001F833CF0758)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F89D70D8B8)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F833CF0E18)
+[LOG] SoundI::release                          : wind_ambiance_03 (000001F833CF05A8)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F89D709478)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F833CF4268)
+[LOG] SoundI::release                          : wind_ambiance_02 (000001F833CF03F8)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F89D70B838)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F833CF3698)
+[LOG] SoundI::release                          : wind_ambiance_03 (000001F833CF3338)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F89D707738)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F833CF34E8)
+[LOG] SoundI::release                          : wind_ambiance_01 (000001F833CF40B8)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F89D70B698)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F833CF4928)
+[LOG] SoundI::release                          : wind_ambiance_02 (000001F833CF4E38)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F89D707598)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F833CF2258)
+[LOG] SoundI::release                          : wind_ambiance_03 (000001F833CFA5F8)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F89D70A318)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F833CFBF48)
+[LOG] SoundI::release                          : wind_ambiance_01 (000001F833CF91B8)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F89D70DA58)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F833CF9008)
+[LOG] SoundI::release                          : wind_ambiance_02 (000001F833CF56A8)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F89D7070B8)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F833CFC608)
+[LOG] SoundI::release                          : wind_ambiance_03 (000001F833CF3F08)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F89D707C18)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F833CF9F38)
+[LOG] SoundI::release                          : wind_ambiance_01 (000001F833CFBD98)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F89D706F18)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F833CFD6E8)
+[LOG] SoundI::release                          : wind_ambiance_02 (000001F833CF1D48)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F89D707258)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F833CF3D58)
+[LOG] SoundI::release                          : wind_ambiance_03 (000001F833CF3848)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F89D706BD8)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F833CF4FE8)
+[LOG] SoundI::release                          : wind_ambiance_01 (000001F833CF2408)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F89D706898)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F833CF2C78)
+[LOG] SoundI::release                          : wind_ambiance_02 (000001F833CF54F8)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F89D7066F8)
+[LOG] SoundI::release                          :     wind_ambiance_02 (000001F833CF1838)
+[LOG] SoundI::release                          : wind_ambiance_01 (000001F833CF14D8)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F89D70CD58)
+[LOG] SoundI::release                          :     wind_ambiance_01 (000001F833CF25B8)
+[LOG] SoundI::release                          : wind_ambiance_03 (000001F833CF3BA8)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F89D709FD8)
+[LOG] SoundI::release                          :     wind_ambiance_03 (000001F833CF1178)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -39,5 +1077,11 @@
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)

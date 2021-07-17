@@ -90,11 +90,14 @@
 	<object class="MixerBusPanner" id="{5c8145fb-bcc7-4c9c-a099-88d329db5de7}" />
 	<object class="MultiSound" id="{058d5b31-5027-41c2-82fb-d3f82435f59c}">
 		<property name="length">
-			<value>1.0986167800453515</value>
+			<value>0.38</value>
 		</property>
 		<property name="playlistMode">
 			<value>1</value>
 		</property>
+		<relationship name="fadeOutCurve">
+			<destination>{01284da2-a83a-4888-9fba-8065a060e6e5}</destination>
+		</relationship>
 		<relationship name="sounds">
 			<destination>{a747c469-1a4a-4d01-97d9-9f35d807fb0c}</destination>
 			<destination>{113f88e3-3714-4588-a491-9b5c153d4e8e}</destination>
@@ -122,6 +125,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{04cffe3e-3d9f-4b34-a16a-5707485f63b8}" />
 	<object class="MixerBusFader" id="{13ee207a-8bef-4529-af58-027a6b75f208}" />
+	<object class="FadeCurve" id="{01284da2-a83a-4888-9fba-8065a060e6e5}">
+		<relationship name="startPoint">
+			<destination>{94ef97de-d70f-452f-8fcd-c80e7270a81f}</destination>
+		</relationship>
+		<relationship name="endPoint">
+			<destination>{9792e8f6-1f3b-404d-8414-0c01cee1330f}</destination>
+		</relationship>
+	</object>
 	<object class="SingleSound" id="{a747c469-1a4a-4d01-97d9-9f35d807fb0c}">
 		<relationship name="audioFile">
 			<destination>{28fccaa5-9f6a-4cdd-8c83-da5c7f797b9e}</destination>
@@ -154,6 +165,25 @@
 		</property>
 		<property name="crossoverSlope">
 			<value>2</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{94ef97de-d70f-452f-8fcd-c80e7270a81f}">
+		<property name="position">
+			<value>0.23999999999999999</value>
+		</property>
+		<property name="value">
+			<value>1</value>
+		</property>
+		<property name="curveShape">
+			<value>-0.514629006</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{9792e8f6-1f3b-404d-8414-0c01cee1330f}">
+		<property name="position">
+			<value>0.38</value>
+		</property>
+		<property name="value">
+			<value>0</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{19e705ff-1c59-4bbd-a323-18a8e3218f0d}" />
