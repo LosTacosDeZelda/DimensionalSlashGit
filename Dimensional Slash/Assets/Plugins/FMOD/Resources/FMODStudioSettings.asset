@@ -234,7 +234,6 @@ MonoBehaviour:
   Banks:
   - ambiance
   - Bosses
-  - footsteps
   - Menu
   - Player
   BanksToLoad: []
