@@ -4,69 +4,88 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //Les boss seront essentiellement des state machines : ils auront tous plusieurs actions et attaques
-public class BossController : EntityController
+public abstract class BossController : EntityController
 {
-    GameObject player;
-    Rigidbody2D bossRb;
-    Vector3 playerDirection;
-    float distBtwBossAndPlayer;
-    float distBtwBossAndClaw;
-    float distBtwPlayerAndClaw;
+    protected GameObject player;
+    protected Rigidbody2D bossRb;
+    protected Animator bossAnim;
+    protected Vector3 playerDirection;
+    protected float distBtwBossAndPlayer;
+    int attackIndex;
+    int lastAttackIndex;
+    //float distBtwBossAndClaw;
+    //float distBtwPlayerAndClaw;
 
-    List<Vector2> ClawInitialPositions = new List<Vector2>();
+    protected bool attackFinished = false;
 
-    public GameObject[] ClawHitboxes;
-    public float LungeDistance;
-    public float FrenesyFactor;
-
+    BossAttack[] bossAttacks = new BossAttack[3];
     public class BossAttack
     {
         public int DamageDealt;
-        
     }
 
-    private void Start()
+    [Header("General")]
+    public int InitialHitpoints;
+
+    protected virtual void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         bossRb = GetComponent<Rigidbody2D>();
+        bossAnim = GetComponentInChildren<Animator>();
 
-        foreach (var claw in ClawHitboxes)
-        {
-
-        }
-
-        for (int i = 0; i < ClawHitboxes.Length; i++)
-        {
-            ClawInitialPositions.Add(ClawHitboxes[i].transform.localPosition);
-
-        }
-
-        InvokeRepeating("AttackChooser", 0f, 5f);
+        SetHealthPoints(InitialHitpoints);
     }
+
     //Boss se prend du dommage du joueur
     //et donne du damage aussi.
 
-    private void Update()
+    protected virtual void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            AttackChooser();
-        }
-
         playerDirection = player.transform.position - transform.position;
 
         distBtwBossAndPlayer = Vector2.Distance(transform.position, player.transform.position);
-        //distBtwBossAndClaw = Vector2()
     }
 
-    void AttackChooser()
+    protected IEnumerator AttackChooser()
     {
-        Attack(0);
+        //Reset attackFinished back to false
+        attackFinished = false;
+
+        attackIndex = Mathf.RoundToInt(UnityEngine.Random.Range(0, bossAttacks.Length));
+
+        while (attackIndex == lastAttackIndex || (GetHealthPoints() > InitialHitpoints / 2 && attackIndex == 2))
+        {
+            attackIndex = Mathf.RoundToInt(UnityEngine.Random.Range(0, bossAttacks.Length));
+        }
+
+        lastAttackIndex = attackIndex;
+
+        /*if (GetHealthPoints() > InitialHitpoints / 2 && attackIndex == 2)
+        {
+
+        }*/
+
+        Attack(attackIndex);
+
+        yield return new WaitUntil(() => attackFinished);
+
+        StartCoroutine(AttackChooser());
     }
 
     public override void Attack(int chosenAttack)
     {
-        StartCoroutine(ClawSwipe(12)); 
+        switch (chosenAttack)
+        {
+            case 0:
+                StartCoroutine(BossAttack1());
+                break;
+            case 1:
+                StartCoroutine(BossAttack2());
+                break;
+            case 2:
+                StartCoroutine(SpecialAttack());
+                break;
+        }
     }
 
     public override void OnAttackReceived(int receivedDmg)
@@ -74,76 +93,10 @@ public class BossController : EntityController
 
     }
 
-    IEnumerator ClawSwipe(int numOfSwipes)
-    {
-        
+    public abstract IEnumerator BossAttack1();
+    public abstract IEnumerator BossAttack2();
+    public abstract IEnumerator SpecialAttack();
+    
 
-        print(playerDirection);
-        for (int i = 0; i < numOfSwipes; i++)
-        {
-            if (distBtwBossAndPlayer > 3)
-            {
-                bossRb.velocity = (playerDirection.normalized) * LungeDistance;
-
-                if (i % 2 == 0)
-                {
-                    //Swipe with right claw !
-                    ClawHitboxes[0].transform.position += playerDirection.normalized;
-                    /*if (Vector2.Distance(ClawHitboxes[0].transform.position, player.transform.position) > distBtwBossAndPlayer)
-                    {
-                        ClawHitboxes[0].transform.position -= playerDirection.normalized;
-                    }
-                    else
-                    {
-                        ClawHitboxes[0].transform.position += playerDirection.normalized;
-                    }
-                    */
-
-
-                    // print(i);
-                }
-                else
-                {
-                    ClawHitboxes[1].transform.position += playerDirection.normalized;
-                    /*if (Vector2.Distance(ClawHitboxes[1].transform.position, player.transform.position) > distBtwBossAndPlayer)
-                    {
-                        ClawHitboxes[1].transform.position -= playerDirection.normalized;
-                    }
-                    else
-                    {
-                        ClawHitboxes[1].transform.position += playerDirection.normalized;
-                    }*/
-
-                    //Swipe with left claw !
-                    // print(i);
-                }
-            }
-            else
-            {
-                if (i % 2 == 0)
-                {
-                    //Swipe with right claw !
-                    ClawHitboxes[0].transform.position = transform.position + (playerDirection.normalized * UnityEngine.Random.Range(2f, 3f));
-                }
-                else
-                {
-                    ClawHitboxes[1].transform.position = transform.position + (playerDirection.normalized * UnityEngine.Random.Range(2f, 3f)); 
-          
-                }
-                
-            }
-            
-
-            yield return new WaitForSeconds(FrenesyFactor);
-            bossRb.velocity = Vector2.zero;
-            yield return new WaitForSeconds(FrenesyFactor);
-        }
-
-        //Reset the boss to a neutral state
-        for (int i = 0; i < ClawHitboxes.Length; i++)
-        {
-            ClawHitboxes[i].transform.localPosition = ClawInitialPositions[i];
-        }
-        bossRb.velocity = Vector2.zero;
-    }
+   
 }

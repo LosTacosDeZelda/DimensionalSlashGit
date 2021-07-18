@@ -21,6 +21,11 @@ public abstract class EntityController : MonoBehaviour
         return healthPoints;
     }
 
+    public void SetHealthPoints(int hp)
+    {
+        healthPoints = hp;
+    }
+
     public int GetAttackDamage()
     {
         return attackDmg;
@@ -29,9 +34,4 @@ public abstract class EntityController : MonoBehaviour
     public abstract void Attack(int chosenAttack);
     public abstract void OnAttackReceived(int receivedDmg);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
