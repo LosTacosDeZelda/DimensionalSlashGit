@@ -39,15 +39,12 @@ public class BunnyBoss : BossController
     // Update is called once per frame
     protected override void Update()
     {
-
         base.Update();
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             StartCoroutine(AttackChooser());
         }
-
-       
     }
 
     private void FixedUpdate()
@@ -113,6 +110,8 @@ public class BunnyBoss : BossController
         attackFinished = true;
 
     }
+
+    //Ground Smash
     public override IEnumerator BossAttack2()
     {
         print("Doing Ground Smash");
@@ -138,6 +137,8 @@ public class BunnyBoss : BossController
         attackFinished = true;
     }
 
+
+    //Teleport
     public override IEnumerator SpecialAttack()
     {
         print("Doing Special Attack");

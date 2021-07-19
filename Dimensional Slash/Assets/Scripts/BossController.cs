@@ -16,13 +16,13 @@ public abstract class BossController : EntityController
     //float distBtwBossAndClaw;
     //float distBtwPlayerAndClaw;
 
+    int currentAttackPower;
     protected bool attackFinished = false;
 
-    BossAttack[] bossAttacks = new BossAttack[3];
-    public class BossAttack
-    {
-        public int DamageDealt;
-    }
+    //BossAttack[] bossAttacks = new BossAttack[3];
+   
+    public int DamageDealt;
+    
 
     [Header("General")]
     public int InitialHitpoints;
@@ -51,11 +51,12 @@ public abstract class BossController : EntityController
         //Reset attackFinished back to false
         attackFinished = false;
 
-        attackIndex = Mathf.RoundToInt(UnityEngine.Random.Range(0, bossAttacks.Length));
+        attackIndex = Mathf.RoundToInt(UnityEngine.Random.Range(0, 3));
 
+        //Il peut faire une attaque 2 fois de suite max
         while (attackIndex == lastAttackIndex || (GetHealthPoints() > InitialHitpoints / 2 && attackIndex == 2))
         {
-            attackIndex = Mathf.RoundToInt(UnityEngine.Random.Range(0, bossAttacks.Length));
+            attackIndex = Mathf.RoundToInt(UnityEngine.Random.Range(0, 3));
         }
 
         lastAttackIndex = attackIndex;

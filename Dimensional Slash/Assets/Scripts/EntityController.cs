@@ -6,7 +6,8 @@ public abstract class EntityController : MonoBehaviour
 {
     SpriteController spriteCtrl;
     int healthPoints;
-    float moveSpeed;
+    [SerializeField]
+    protected float moveSpeed;
     int attackID;
     int attackDmg;
 
