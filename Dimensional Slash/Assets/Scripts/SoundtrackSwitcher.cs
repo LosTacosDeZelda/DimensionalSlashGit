@@ -26,10 +26,13 @@ public class SoundtrackSwitcher : MonoBehaviour
     //À toi de set les paramètres nécessaires de FMOD !
     void SwitchSoundtrack(GameManager._Dimensions dimension)
     {
-        switch (dimension)
+        EventInstance.setParameterByName("Ambiance", (float)dimension);
+       
+        /*switch (dimension)
         {
             case GameManager._Dimensions.Day:
                 SoundEvent = "event:/Ambiance/Wind";
+                
                 StartCoroutine(FadeOut());
                 break;
             case GameManager._Dimensions.Night:
@@ -38,7 +41,7 @@ public class SoundtrackSwitcher : MonoBehaviour
                 break; 
             default:
                 break;
-        }
+        }*/
     }
     // On attend que le fade out termine avant de jouer le nouveau son
     IEnumerator FadeOut()
