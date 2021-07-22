@@ -38,9 +38,29 @@ MonoBehaviour:
   Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Menu.bank
   Name: Menu
   StudioPath: bank:/Menu
-  lastModified: 637619028656213252
+  lastModified: 637619004963185081
   LoadResult: 0
   FileSizes: []
+  Exists: 1
+--- !u!114 &-4352590203051024794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/player_footstep_nm/Volume_parameter
+  m_EditorClassIdentifier: 
+  Name: Volume_parameter
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
   Exists: 1
 --- !u!114 &-1497383116786898032
 MonoBehaviour:
@@ -57,7 +77,7 @@ MonoBehaviour:
   Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Player.bank
   Name: Player
   StudioPath: bank:/Player
-  lastModified: 637619028667892725
+  lastModified: 637619004964974892
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -76,7 +96,7 @@ MonoBehaviour:
   Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637619028654003506
+  lastModified: 637619004962867377
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -110,7 +130,7 @@ MonoBehaviour:
   - {fileID: -1318854611517927576}
   StringsBanks:
   - {fileID: 7576477237846790460}
-  stringsBankWriteTime: 637619028656162826
+  stringsBankWriteTime: 637619004963035481
   cacheVersion: 6
 --- !u!114 &384590085559809724
 MonoBehaviour:
@@ -193,7 +213,7 @@ MonoBehaviour:
   Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/ambiance.bank
   Name: ambiance
   StudioPath: bank:/ambiance
-  lastModified: 637619028653063118
+  lastModified: 637619004962418581
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -212,7 +232,7 @@ MonoBehaviour:
   Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Bosses.bank
   Name: Bosses
   StudioPath: bank:/Bosses
-  lastModified: 637619028653204071
+  lastModified: 637619004962598111
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -236,7 +256,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 384590085559809724}
+  - {fileID: -4352590203051024794}
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
@@ -255,7 +275,7 @@ MonoBehaviour:
   Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/footsteps.bank
   Name: footsteps
   StudioPath: bank:/footsteps
-  lastModified: 637619028653684339
+  lastModified: 637619004962687862
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -274,9 +294,9 @@ MonoBehaviour:
   Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637619028656162826
+  lastModified: 637619004963035481
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1200
+    Value: 1188
   Exists: 1

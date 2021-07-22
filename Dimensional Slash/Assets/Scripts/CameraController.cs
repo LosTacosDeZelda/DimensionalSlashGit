@@ -4,81 +4,69 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    private Rigidbody2D rb;
     GameObject player;
-    BoxCollider2D deadZones;
-    EdgeCollider2D deadZone;
-    public bool playerIsInDeadZone = true;
     public float CamSpeed;
-
+    
     public Vector2 followOffset;
-    public Vector2 threshold;
+    Vector2 threshold;
 
-    Vector3 moveTemp;
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        deadZone = GetComponentInChildren<EdgeCollider2D>();
+        threshold = calculateThreshold();
+        rb = player.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        /*else if (yDifference <= -movementThreshold)
-        {
-            moveTemp = player.transform.position;
-            moveTemp.z = -10;
-            transform.position = Vector3.Lerp(new Vector3(0, transform.position.y - 3, -10), new Vector3(0, player.transform.position.y, -10), CamSpeed);
-        }*/
         
- 
-
-        /*if (playerIsInDeadZone == false && Vector2.Distance(player.transform.position,new Vector2(deadZone.bounds.ClosestPoint(player.transform.position).x, deadZone.bounds.ClosestPoint(player.transform.position).y)) > 3)
-        {
-            print("lerping");
-            transform.position = Vector3.Lerp(new Vector3(0, transform.position.y, -10), new Vector3(0, player.transform.position.y, -10), CamSpeed);
-        }*/
-
-      
-
-        /*if (deadZone.bounds.Intersects(player.GetComponent<BoxCollider2D>().bounds))
-        {
-            playerIsInDeadZone = true;
-        }
-        else
-        {
-            playerIsInDeadZone = false;
-        } */
 
     }
 
-    private void LateUpdate()
+    private Vector3 calculateThreshold()
     {
-        
+        Rect aspect = Camera.main.pixelRect;
+
+        Vector2 t = new Vector2(Camera.main.orthographicSize * aspect.width / aspect.height, Camera.main.orthographicSize);
+
+        t.x -= followOffset.x;
+        t.y -= followOffset.y;
+
+        return t;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        Vector2 border = calculateThreshold();
+        Gizmos.DrawWireCube(transform.position, new Vector3(border.x * 2, border.y * 2, 1));
     }
 
     private void FixedUpdate()
     {
-        transform.position = Vector3.Lerp(new Vector3(0, transform.position.y, -10), new Vector3(0, player.transform.position.y, -10), CamSpeed);
+        Vector2 follow = player.transform.position;
+        float xDifference = Vector2.Distance(Vector2.right * transform.position.x, Vector2.right * follow.x);
+        float yDifference = Vector2.Distance(Vector2.up * transform.position.y, Vector2.up * follow.y);
+
+        Vector3 newPosition = transform.position;
+
+        if (Mathf.Abs(xDifference) >= threshold.x)
+        {
+            newPosition.x = follow.x;
+        }
+
+        if (Mathf.Abs(yDifference) >= threshold.y)
+        {
+            newPosition.y = follow.y;
+        }
+
+        float moveSpeed = rb.velocity.magnitude > CamSpeed ? rb.velocity.magnitude : CamSpeed;
+        transform.position = Vector3.Lerp(new Vector3(0, transform.position.y, -10), new Vector3(0, newPosition.y, -10), CamSpeed * Time.deltaTime);
+        //Vector3.MoveTowards(new Vector3(0, transform.position.y,-10) , new Vector3(0, newPosition.y, -10), moveSpeed * Time.deltaTime);//
     }
-
-    /* private void OnTriggerEnter2D(Collider2D collision)
-     {
-         if (collision.gameObject.CompareTag("Player"))
-         {
-             playerIsInDeadZone = true;
-         }
-
-     }
-
-     private void OnTriggerExit2D(Collider2D collision)
-     {
-         if (collision.gameObject.CompareTag("Player"))
-         {
-             playerIsInDeadZone = false;
-         }
-     }*/
 
 
 }
