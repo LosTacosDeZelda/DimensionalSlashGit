@@ -1,158 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6764870801518199404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/death/player_game_over
-  m_EditorClassIdentifier: 
-  Path: event:/Player/death/player_game_over
-  guid: ae77d7c600ae6844a609b3824014ef5f
-  Banks:
-  - {fileID: -1497383116786898032}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4000
---- !u!114 &-4755631410970208334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Menu.bank
-  m_EditorClassIdentifier: 
-  Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Menu.bank
-  Name: Menu
-  StudioPath: bank:/Menu
-  lastModified: 637619004963185081
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &-4352590203051024794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/player_footstep_nm/Volume_parameter
-  m_EditorClassIdentifier: 
-  Name: Volume_parameter
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-1497383116786898032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Player.bank
-  m_EditorClassIdentifier: 
-  Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Player.bank
-  Name: Player
-  StudioPath: bank:/Player
-  lastModified: 637619004964974892
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &-1318854611517927576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637619004962867377
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: 7576477237846790460}
-  - {fileID: 3812352608022972897}
-  - {fileID: 3822260926916722281}
-  - {fileID: 6237671882342507732}
-  - {fileID: -1318854611517927576}
-  - {fileID: -4755631410970208334}
-  - {fileID: -1497383116786898032}
-  EditorEvents:
-  - {fileID: 2832685537942413482}
-  - {fileID: -6764870801518199404}
-  - {fileID: 5059018965783859680}
-  - {fileID: 2992113978648423283}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: -1318854611517927576}
-  StringsBanks:
-  - {fileID: 7576477237846790460}
-  stringsBankWriteTime: 637619004963035481
-  cacheVersion: 6
---- !u!114 &384590085559809724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/player_footstep_nm/Volume_parameter
-  m_EditorClassIdentifier: 
-  Name: Volume_parameter
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2406229294
-    data2: 116947650
-  Exists: 1
---- !u!114 &2832685537942413482
+--- !u!114 &-8220649619874472785
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167,7 +15,7 @@ MonoBehaviour:
   Path: event:/Player/attack/spear_swing
   guid: 1d61f6c94efaf64ebde4f16dd4951bc1
   Banks:
-  - {fileID: -1497383116786898032}
+  - {fileID: 4753006296201027034}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -175,111 +23,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2340
---- !u!114 &2992113978648423283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/attack/spear_hit
-  m_EditorClassIdentifier: 
-  Path: event:/Player/attack/spear_hit
-  guid: d8bf5391a2c9d943bc4770937ad65ebc
-  Banks:
-  - {fileID: -1497383116786898032}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1050
---- !u!114 &3812352608022972897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/ambiance.bank
-  m_EditorClassIdentifier: 
-  Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/ambiance.bank
-  Name: ambiance
-  StudioPath: bank:/ambiance
-  lastModified: 637619004962418581
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &3822260926916722281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Bosses.bank
-  m_EditorClassIdentifier: 
-  Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Bosses.bank
-  Name: Bosses
-  StudioPath: bank:/Bosses
-  lastModified: 637619004962598111
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &5059018965783859680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/footstep/player_footstep_nm
-  m_EditorClassIdentifier: 
-  Path: event:/Player/footstep/player_footstep_nm
-  guid: d0d47af3cd50f1429199bd42dc22b341
-  Banks:
-  - {fileID: -1497383116786898032}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -4352590203051024794}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2000
---- !u!114 &6237671882342507732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/footsteps.bank
-  m_EditorClassIdentifier: 
-  Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/footsteps.bank
-  Name: footsteps
-  StudioPath: bank:/footsteps
-  lastModified: 637619004962687862
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &7576477237846790460
+--- !u!114 &-7145712950676138056
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -294,9 +38,819 @@ MonoBehaviour:
   Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637619004963035481
+  lastModified: 637625605700043045
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1188
+    Value: 2400
   Exists: 1
+--- !u!114 &-6904437699885528318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Menu/menu_press
+  m_EditorClassIdentifier: 
+  Path: event:/Menu/menu_press
+  guid: 2ae38f1a180d8541b032d628b6c60154
+  Banks:
+  - {fileID: 2175937255613117653}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1400
+--- !u!114 &-6582334244069063412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bosses/other_boss/Boss_03_Scream
+  m_EditorClassIdentifier: 
+  Path: event:/Bosses/other_boss/Boss_03_Scream
+  guid: 20b61a8961b17540a7847495ed4708a1
+  Banks:
+  - {fileID: 6157151085584240778}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3500
+--- !u!114 &-6528378372895318365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/footsteps/Terrain
+  m_EditorClassIdentifier: 
+  Name: Terrain
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-5745900478558556741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Menu/menu_cursor
+  m_EditorClassIdentifier: 
+  Path: event:/Menu/menu_cursor
+  guid: 1cb7509cbe89134b9c438dd86042509a
+  Banks:
+  - {fileID: 2175937255613117653}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1600
+--- !u!114 &-4452316393230911590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/death/player_damage
+  m_EditorClassIdentifier: 
+  Path: event:/Player/death/player_damage
+  guid: af2c7904c306c54aa576365b877a13ef
+  Banks:
+  - {fileID: 4753006296201027034}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &-2856718819014081372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637625605700023056
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-2730198102662825319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiance/Ambiances
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiance/Ambiances
+  guid: bc11517a519ee64d9c650d02b2e9c8cb
+  Banks:
+  - {fileID: 8114651501612943636}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 7169688815458254861}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 9500
+--- !u!114 &-2234760016562098614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/attack/spear_hit
+  m_EditorClassIdentifier: 
+  Path: event:/Player/attack/spear_hit
+  guid: d8bf5391a2c9d943bc4770937ad65ebc
+  Banks:
+  - {fileID: 4753006296201027034}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1050
+--- !u!114 &-1918511983954646076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/footstep/footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Player/footstep/footsteps
+  guid: 29a0e5f4c7701b4abd11d4dd472f0d3a
+  Banks:
+  - {fileID: 4753006296201027034}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -6528378372895318365}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-1621752563775147595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bosses/attacks_boss/boss_00_explosion
+  m_EditorClassIdentifier: 
+  Path: event:/Bosses/attacks_boss/boss_00_explosion
+  guid: 9353e25daf381247842c390aed222378
+  Banks:
+  - {fileID: 6157151085584240778}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2600
+--- !u!114 &-1615794017455140712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bosses/attacks_boss/boss_03_lazer_buildup
+  m_EditorClassIdentifier: 
+  Path: event:/Bosses/attacks_boss/boss_03_lazer_buildup
+  guid: 60d88c800527ba4eb7ccf85251ab1692
+  Banks:
+  - {fileID: 6157151085584240778}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3700
+--- !u!114 &-1206695313880071873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/attack/bow_n_arrow_shoot
+  m_EditorClassIdentifier: 
+  Path: event:/Player/attack/bow_n_arrow_shoot
+  guid: a328e02ea440324fb98fec80a3d48f3a
+  Banks:
+  - {fileID: 4753006296201027034}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1013
+--- !u!114 &-627761570834287510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Menu/menu_cancel
+  m_EditorClassIdentifier: 
+  Path: event:/Menu/menu_cancel
+  guid: 376ddffea586d34daf7219ace64f5a4d
+  Banks:
+  - {fileID: 2175937255613117653}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2500
+--- !u!114 &-437765526375377822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/attack/bow_n_arrow_hold
+  m_EditorClassIdentifier: 
+  Path: event:/Player/attack/bow_n_arrow_hold
+  guid: 18c55fd86ec4ac4a8eeb5ad9b47d6608
+  Banks:
+  - {fileID: 4753006296201027034}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1714
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -7145712950676138056}
+  - {fileID: 8114651501612943636}
+  - {fileID: 6157151085584240778}
+  - {fileID: -2856718819014081372}
+  - {fileID: 2175937255613117653}
+  - {fileID: 4753006296201027034}
+  EditorEvents:
+  - {fileID: -2730198102662825319}
+  - {fileID: 2399529929165278125}
+  - {fileID: -6582334244069063412}
+  - {fileID: 3699153142368552092}
+  - {fileID: 7355708376302068595}
+  - {fileID: -1615794017455140712}
+  - {fileID: 1053714018285475269}
+  - {fileID: 2774550796090695032}
+  - {fileID: -1621752563775147595}
+  - {fileID: 3810079654056907356}
+  - {fileID: 7060895950875042304}
+  - {fileID: 8928347175864552879}
+  - {fileID: 6191524727913815229}
+  - {fileID: -5745900478558556741}
+  - {fileID: -6904437699885528318}
+  - {fileID: -627761570834287510}
+  - {fileID: 1136956928869468360}
+  - {fileID: 4113205640077163864}
+  - {fileID: 54740928631228459}
+  - {fileID: -437765526375377822}
+  - {fileID: -8220649619874472785}
+  - {fileID: -1918511983954646076}
+  - {fileID: 9134973024567865903}
+  - {fileID: -1206695313880071873}
+  - {fileID: 1379993376091083596}
+  - {fileID: -4452316393230911590}
+  - {fileID: -2234760016562098614}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -2856718819014081372}
+  StringsBanks:
+  - {fileID: -7145712950676138056}
+  stringsBankWriteTime: 637625605700043045
+  cacheVersion: 6
+--- !u!114 &54740928631228459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/attack/bow_n_arrow_hit
+  m_EditorClassIdentifier: 
+  Path: event:/Player/attack/bow_n_arrow_hit
+  guid: 10055aee3cf731418c62a7e3d155478c
+  Banks:
+  - {fileID: 4753006296201027034}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 380
+--- !u!114 &1053714018285475269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bosses/attacks_boss/boss_00_swings
+  m_EditorClassIdentifier: 
+  Path: event:/Bosses/attacks_boss/boss_00_swings
+  guid: 714d4683379d7d4c88187e9ad6f6c3c4
+  Banks:
+  - {fileID: 6157151085584240778}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 610
+--- !u!114 &1136956928869468360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Menu/new_game_start
+  m_EditorClassIdentifier: 
+  Path: event:/Menu/new_game_start
+  guid: 41f817f8fd37d8479d3b6a0c1939d947
+  Banks:
+  - {fileID: 2175937255613117653}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5000
+--- !u!114 &1379993376091083596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/death/player_game_over
+  m_EditorClassIdentifier: 
+  Path: event:/Player/death/player_game_over
+  guid: ae77d7c600ae6844a609b3824014ef5f
+  Banks:
+  - {fileID: 4753006296201027034}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &2175937255613117653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Menu.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Menu.bank
+  Name: Menu
+  StudioPath: bank:/Menu
+  lastModified: 637625605704450676
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &2399529929165278125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bosses/other_boss/Boss_01_Scream
+  m_EditorClassIdentifier: 
+  Path: event:/Bosses/other_boss/Boss_01_Scream
+  guid: 028c66abc0146249866a120588a6104b
+  Banks:
+  - {fileID: 6157151085584240778}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2300
+--- !u!114 &2774550796090695032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bosses/attacks_boss/boss_01_groundstomp
+  m_EditorClassIdentifier: 
+  Path: event:/Bosses/attacks_boss/boss_01_groundstomp
+  guid: 8c74eaf55094744997e0a2961da638be
+  Banks:
+  - {fileID: 6157151085584240778}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2500
+--- !u!114 &3699153142368552092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bosses/attacks_boss/boss_00_projectile
+  m_EditorClassIdentifier: 
+  Path: event:/Bosses/attacks_boss/boss_00_projectile
+  guid: 26af72d5cb46e248a9a22bb321526cf8
+  Banks:
+  - {fileID: 6157151085584240778}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1300
+--- !u!114 &3810079654056907356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bosses/attacks_boss/boss_03_lazer
+  m_EditorClassIdentifier: 
+  Path: event:/Bosses/attacks_boss/boss_03_lazer
+  guid: a55d8948ce3cc141937c8dc60fea3287
+  Banks:
+  - {fileID: 6157151085584240778}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 5749075729989259438}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5900
+--- !u!114 &4113205640077163864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Menu/game_victory
+  m_EditorClassIdentifier: 
+  Path: event:/Menu/game_victory
+  guid: e76c2953512c094ca2fca7c1805c3beb
+  Banks:
+  - {fileID: 2175937255613117653}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5000
+--- !u!114 &4753006296201027034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Player.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Player.bank
+  Name: Player
+  StudioPath: bank:/Player
+  lastModified: 637625605711815143
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &5749075729989259438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/boss_03_lazer/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &6157151085584240778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bosses.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Bosses.bank
+  Name: Bosses
+  StudioPath: bank:/Bosses
+  lastModified: 637625605699899193
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &6191524727913815229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bosses/footsteps_boss/footsteps_boss
+  m_EditorClassIdentifier: 
+  Path: event:/Bosses/footsteps_boss/footsteps_boss
+  guid: f31a3906eb82ce42ab84db82bee896e0
+  Banks:
+  - {fileID: 6157151085584240778}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 920
+--- !u!114 &7060895950875042304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bosses/attacks_boss/boss_02_flamethrower
+  m_EditorClassIdentifier: 
+  Path: event:/Bosses/attacks_boss/boss_02_flamethrower
+  guid: e502bb7cae661441a16307d5972c9302
+  Banks:
+  - {fileID: 6157151085584240778}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3000
+--- !u!114 &7169688815458254861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambiances/Ambiance
+  m_EditorClassIdentifier: 
+  Name: Ambiance
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &7355708376302068595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bosses/death_boss/Boss_death
+  m_EditorClassIdentifier: 
+  Path: event:/Bosses/death_boss/Boss_death
+  guid: 4895ae9caea30b4291bf07a1459ae5c4
+  Banks:
+  - {fileID: 6157151085584240778}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8780
+--- !u!114 &8114651501612943636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/ambiance.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/ambiance.bank
+  Name: ambiance
+  StudioPath: bank:/ambiance
+  lastModified: 637625605686616921
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &8928347175864552879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bosses/other_boss/Boss_02_Scream
+  m_EditorClassIdentifier: 
+  Path: event:/Bosses/other_boss/Boss_02_Scream
+  guid: e5a2a20c3860764c9b6e4eec09217a30
+  Banks:
+  - {fileID: 6157151085584240778}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2500
+--- !u!114 &9134973024567865903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/attack/dimension_change
+  m_EditorClassIdentifier: 
+  Path: event:/Player/attack/dimension_change
+  guid: 699fbc49e6ce4d45a3fdb1c8ca6dc840
+  Banks:
+  - {fileID: 4753006296201027034}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2695
