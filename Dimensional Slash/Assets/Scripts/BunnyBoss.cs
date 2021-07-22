@@ -16,14 +16,18 @@ public class BunnyBoss : BossController
 
     [Header("Ground Smash Attack")]
     public GameObject HitboxPrefab;
-    public float SmashRadius;
+    [Range(1, 6)] public float SmashRadius;
+    [Range(0,1)] public float hitBoxDistFromBoss;
     public int FollowSpeed;
-    bool canFollowPlayer = false;
 
     [Header("Teleport Special Attack")]
     public int TeleportSpeed;
+    public float TeleportDelay;
     //Counter window
-    //Anticipation delay
+    public float AnticipationDelay;
+
+    bool canFollowPlayer = false;
+    bool stopBoss = false;
 
     // Start is called before the first frame update
     protected override void Start()
@@ -45,6 +49,11 @@ public class BunnyBoss : BossController
         {
             StartCoroutine(AttackChooser());
         }
+
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            StartCoroutine(SpecialAttack());
+        }
     }
 
     private void FixedUpdate()
@@ -53,13 +62,19 @@ public class BunnyBoss : BossController
         {
             bossRb.velocity = playerDirection.normalized * FollowSpeed;
         }
+
+        if (distBtwBossAndPlayer < 2)
+        {
+            bossRb.velocity = Vector2.zero;
+        }
+     
     }
 
     //Claw Swipe
     public override IEnumerator BossAttack1()
     {
 
-        print("Doing Claw Swipe");
+        print("Doing Claw Swipe. Damage : " + attackDmg);
         //print(playerDirection);
 
         for (int i = 0; i < NumOfSwipes; i++)
@@ -85,11 +100,11 @@ public class BunnyBoss : BossController
                 if (i % 2 == 0)
                 {
                     //Swipe with right claw !
-                    ClawHitboxes[0].transform.position = transform.position + (playerDirection.normalized * UnityEngine.Random.Range(2f, 3f));
+                    ClawHitboxes[0].transform.position = transform.position + (playerDirection.normalized * UnityEngine.Random.Range(2f, 10f));
                 }
                 else
                 {
-                    ClawHitboxes[1].transform.position = transform.position + (playerDirection.normalized * UnityEngine.Random.Range(2f, 3f));
+                    ClawHitboxes[1].transform.position = transform.position + (playerDirection.normalized * UnityEngine.Random.Range(2f, 10f));
 
                 }
 
@@ -114,7 +129,7 @@ public class BunnyBoss : BossController
     //Ground Smash
     public override IEnumerator BossAttack2()
     {
-        print("Doing Ground Smash");
+        print("Doing Ground Smash. Damage : " + attackDmg);
 
         //Slowly follow player !
         canFollowPlayer = true;
@@ -125,7 +140,7 @@ public class BunnyBoss : BossController
         canFollowPlayer = false;
         bossAnim.SetBool("PreparingSmash", false);
 
-        GameObject hitboxClone = Instantiate(HitboxPrefab,transform.position + (playerDirection * 0.2f), Quaternion.identity);
+        GameObject hitboxClone = Instantiate(HitboxPrefab,transform.position + (playerDirection * hitBoxDistFromBoss), Quaternion.identity);
         hitboxClone.transform.localScale = Vector3.one * (SmashRadius * 2);
 
         bossRb.velocity = Vector2.zero;
@@ -141,8 +156,20 @@ public class BunnyBoss : BossController
     //Teleport
     public override IEnumerator SpecialAttack()
     {
-        print("Doing Special Attack");
-        yield return new WaitForSeconds(2f);
+        print("Doing Special Attack. Damage : " + attackDmg);
+        bossRb.velocity = playerDirection.normalized * TeleportSpeed;
+        yield return new WaitForSeconds(TeleportDelay);
+        ClawHitboxes[0].transform.position = player.transform.position;
+        ClawHitboxes[1].transform.position = player.transform.position;
+        bossRb.velocity = Vector2.zero;
+        yield return new WaitForSeconds(AnticipationDelay);
+
+        //Reset the boss to a neutral state, attack is finished
+        for (int i = 0; i < ClawHitboxes.Length; i++)
+        {
+            ClawHitboxes[i].transform.localPosition = ClawInitialPositions[i];
+        }
+
         attackFinished = true;
     }
 }

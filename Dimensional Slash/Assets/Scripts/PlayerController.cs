@@ -88,7 +88,7 @@ public class PlayerController : EntityController
         if (Mathf.Abs(zVelocity) > moveSpeed && zInput != 0) zVelocity = (zVelocity > 0) ? moveSpeed : -moveSpeed;
 
         Vector2 movement = new Vector2(xVelocity, zVelocity);
-        Debug.Log(movement);
+        //Debug.Log(movement);
 
         myRb.velocity = movement;
 

@@ -9,7 +9,7 @@ public abstract class EntityController : MonoBehaviour
     [SerializeField]
     protected float moveSpeed;
     int attackID;
-    int attackDmg;
+    protected int attackDmg;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +30,11 @@ public abstract class EntityController : MonoBehaviour
     public int GetAttackDamage()
     {
         return attackDmg;
+    }
+
+    public void SetAttackDamage(int dmg)
+    {
+        attackDmg = dmg;
     }
 
     public abstract void Attack(int chosenAttack);

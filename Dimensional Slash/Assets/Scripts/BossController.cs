@@ -16,13 +16,9 @@ public abstract class BossController : EntityController
     //float distBtwBossAndClaw;
     //float distBtwPlayerAndClaw;
 
-    int currentAttackPower;
     protected bool attackFinished = false;
-
-    //BossAttack[] bossAttacks = new BossAttack[3];
    
-    public int DamageDealt;
-    
+    public int[] AttackDamageValues;
 
     [Header("General")]
     public int InitialHitpoints;
@@ -54,12 +50,12 @@ public abstract class BossController : EntityController
         attackIndex = Mathf.RoundToInt(UnityEngine.Random.Range(0, 3));
 
         //Il peut faire une attaque 2 fois de suite max
-        while (attackIndex == lastAttackIndex || (GetHealthPoints() > InitialHitpoints / 2 && attackIndex == 2))
+        /*while (attackIndex == lastAttackIndex || (GetHealthPoints() > InitialHitpoints / 2 && attackIndex == 2))
         {
             attackIndex = Mathf.RoundToInt(UnityEngine.Random.Range(0, 3));
         }
 
-        lastAttackIndex = attackIndex;
+        lastAttackIndex = attackIndex;*/
 
         /*if (GetHealthPoints() > InitialHitpoints / 2 && attackIndex == 2)
         {
@@ -75,6 +71,9 @@ public abstract class BossController : EntityController
 
     public override void Attack(int chosenAttack)
     {
+        //Set attack damage to the chosen attack damage
+        SetAttackDamage(AttackDamageValues[chosenAttack]);
+
         switch (chosenAttack)
         {
             case 0:
@@ -91,13 +90,24 @@ public abstract class BossController : EntityController
 
     public override void OnAttackReceived(int receivedDmg)
     {
-
+        print(GetHealthPoints() - receivedDmg);
+        //Do the hurt sequence : substract health, flash the boss sprite
+        SetHealthPoints(GetHealthPoints() - receivedDmg);
     }
 
     public abstract IEnumerator BossAttack1();
     public abstract IEnumerator BossAttack2();
     public abstract IEnumerator SpecialAttack();
-    
 
-   
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            //Tell the player he's been hit !
+            collision.GetComponent<PlayerController>().OnAttackReceived(attackDmg);
+        }
+    }
+
+
+
 }
