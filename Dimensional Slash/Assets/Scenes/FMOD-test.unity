@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 204470451}
   - component: {fileID: 204470450}
   m_Layer: 0
-  m_Name: Jukebox
+  m_Name: Ambiance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -152,15 +152,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Bosses/attacks_boss/boss_03_lazer
+  Event: event:/Ambiance/Wind
   PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 1
-  Params:
-  - Name: Volume
-    Value: 1
+  Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
@@ -176,6 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 284b6be4683259d49ae57aa084078f4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Ambiance: {fileID: 204470450}
 --- !u!4 &204470452
 Transform:
   m_ObjectHideFlags: 0

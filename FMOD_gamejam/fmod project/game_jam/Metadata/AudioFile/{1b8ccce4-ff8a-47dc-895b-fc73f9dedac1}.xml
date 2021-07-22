@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
-	<object class="AudioFile" id="{111c69e2-fe47-47cc-9dfd-761e6093f8b7}">
+	<object class="AudioFile" id="{1b8ccce4-ff8a-47dc-895b-fc73f9dedac1}">
 		<property name="assetPath">
-			<value>Boss_sfx/boss_flame_thrower.wav</value>
+			<value>Boss_sfx/boss_02_scream_v2.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>9.8900000000000006</value>
+			<value>6.54</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{16813aac-b017-4856-b492-4b121ea745ac}</destination>

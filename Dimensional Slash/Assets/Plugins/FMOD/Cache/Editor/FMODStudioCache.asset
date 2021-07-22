@@ -180,7 +180,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1800
+  Length: 2500
 --- !u!114 &-5437292577978959006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,7 +239,7 @@ MonoBehaviour:
   Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Menu.bank
   Name: Menu
   StudioPath: bank:/Menu
-  lastModified: 637621343372381767
+  lastModified: 637625002099060805
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -263,10 +263,30 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -5437292577978959006}
+  - {fileID: -4087700729304345275}
   MinDistance: 0
   MaxDistance: 0
-  Length: 5840
+  Length: 5900
+--- !u!114 &-4087700729304345275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/boss_03_lazer/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-3799982390530808620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -348,7 +368,7 @@ MonoBehaviour:
   Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Player.bank
   Name: Player
   StudioPath: bank:/Player
-  lastModified: 637621343375027729
+  lastModified: 637625002109171662
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -367,7 +387,7 @@ MonoBehaviour:
   Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637621343371583882
+  lastModified: 637625002095527232
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -470,7 +490,7 @@ MonoBehaviour:
   - {fileID: -1318854611517927576}
   StringsBanks:
   - {fileID: 7576477237846790460}
-  stringsBankWriteTime: 637621343371693589
+  stringsBankWriteTime: 637625002095567490
   cacheVersion: 6
 --- !u!114 &193499509122343689
 MonoBehaviour:
@@ -535,6 +555,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &765830914379953134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/footsteps/Terrain
+  m_EditorClassIdentifier: 
+  Name: Terrain
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &1057848779000363711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -626,7 +666,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 7500
+  Length: 3000
 --- !u!114 &2742216331356910807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -777,7 +817,7 @@ MonoBehaviour:
   Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/ambiance.bank
   Name: ambiance
   StudioPath: bank:/ambiance
-  lastModified: 637621343367966058
+  lastModified: 637625002084332819
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -796,7 +836,7 @@ MonoBehaviour:
   Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Bosses.bank
   Name: Bosses
   StudioPath: bank:/Bosses
-  lastModified: 637621343371454233
+  lastModified: 637625002095477483
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -867,7 +907,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -3799982390530808620}
+  - {fileID: 765830914379953134}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -912,7 +952,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1400
+  Length: 2500
 --- !u!114 &7576477237846790460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -928,7 +968,7 @@ MonoBehaviour:
   Path: ../FMOD_gamejam/fmod project/game_jam/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637621343371693589
+  lastModified: 637625002095567490
   LoadResult: 0
   FileSizes:
   - Name: Desktop
