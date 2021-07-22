@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{626e300b-55ff-40dd-9aae-334bbbc16d34}">
+		<property name="name">
+			<value>Volume</value>
+		</property>
+		<relationship name="folder">
+			<destination>{a68c0a9c-bed0-4a4b-a566-5904afac4a6d}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{a75a17e0-ec69-42bb-9fc0-0edc76c8aa30}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{a75a17e0-ec69-42bb-9fc0-0edc76c8aa30}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{a0e3f807-39a7-4e6d-943b-8b4761ebb04e}</destination>
+			<destination>{f02d1da8-60f6-45fd-afc9-489128dd74df}</destination>
+		</relationship>
+	</object>
+	<object class="RandomizerModulator" id="{a0e3f807-39a7-4e6d-943b-8b4761ebb04e}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>cursorPosition</value>
+		</property>
+	</object>
+	<object class="ADSRModulator" id="{f02d1da8-60f6-45fd-afc9-489128dd74df}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>cursorPosition</value>
+		</property>
+	</object>
+</objects>
